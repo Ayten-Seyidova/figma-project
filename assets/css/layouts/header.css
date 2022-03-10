@@ -2,12 +2,34 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--bodyColor);
+    color: var(--mainBlackColor);
+    overflow-x: hidden;
+}
+
 header {
+    height: 107px;
+    margin-bottom: 35px;
+}
+
+.header {
+    height: 107px;
+    background-color: var(--bodyColor);
+    box-shadow: 0 0 5px 0 gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 107px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 33px 0 31px;
+    z-index: 9;
 }
 
 .logo {

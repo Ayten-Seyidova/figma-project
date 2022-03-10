@@ -9,20 +9,24 @@
     justify-content: space-between;
 }
 
-.left-section h2 {
+.first-section .left-section {
+    flex: 50%;
+}
+
+.first-section .left-section h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 64px;
     margin-bottom: 24px;
 }
 
-.left-section p {
+.first-section .left-section p {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     margin-bottom: 40px;
     color: #66645E;
 }
 
-.left-section a {
+.first-section .left-section a {
     padding: 20px 24px;
     background-color: var(--mainGreenColor);
     color: #fff;
@@ -33,10 +37,432 @@
     transition: .3s all ease-in-out;
 }
 
-.left-section a:hover {
+.first-section .left-section a:hover {
     background-color: #469075;
 }
 
-.right-section img {
-    height: calc(100vh - 120px);
+.first-section .right-section {
+    flex: 50%;
+}
+
+.first-section .right-section img {
+    height: calc(100vh - 107px);
+}
+
+.border {
+    border: 4px solid var(--mainBlackColor);
+    border-radius: 16px;
+}
+
+.second-section {
+    margin-top: 80px;
+}
+
+.second-section-head {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.second-section-head h2 {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 24px;
+}
+
+.second-section-head p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 48px;
+}
+
+.second-section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-section-content .card {
+    background-color: #fff;
+    padding: 64px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 295px;
+    flex: 33%;
+    box-shadow: 0 0 5px 0 lightgray;
+    text-align: center;
+    position: relative;
+}
+
+.second-section-content .card .card-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.second-section-content .card:not(:last-child) {
+    margin-right: 23px;
+}
+
+.second-section-content .card img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50px;
+}
+
+.second-section-content .card h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.second-section-content .card p {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.third-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-section .left-section {
+    margin-right: 138px;
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.third-section .left-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.third-section .left-section h2 {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.third-section .left-section p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.third-section .right-section {
+    flex: 3;
+    height: 400px;
+    padding: 32px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.third-section .right-section h3 {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.third-section .right-section .profile-item {
+    display: flex;
+    align-items: center;
+}
+
+.third-section .right-section img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-right: 12px;
+}
+
+.profile-item .profile-info h4 {
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 8px;
+}
+
+.profile-item .profile-info p {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: gray;
+}
+
+.fourth-section .left-section {
+    order: 1;
+    margin-right: 0;
+}
+
+.fourth-section .right-section {
+    order: 0;
+    margin-right: 178px;
+}
+
+.fourth-section .right-section .card-text {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+}
+
+.fourth-section .right-section .info-section {
+    display: flex;
+}
+
+.info-section .info-item {
+    flex: 5;
+}
+
+.info-section .info-item h5 {
+    color: #66645E;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+}
+
+.info-section .info-item p {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+}
+
+.fourth-section .right-section button {
+    padding: 12px 24px;
+    background-color: var(--mainBlackColor);
+    color: #fff;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    transition: .3s all ease-in-out;
+}
+
+.fourth-section .right-section button:hover {
+    background-color: transparent;
+    color: var(--mainBlackColor);
+}
+
+.fifth-section .left-section {
+    flex: 5;
+    margin-right: 46px;
+}
+
+.fifth-section .right-section {
+    flex: 5;
+    border: none;
+}
+
+.fifth-section .right-section .first-card {
+    padding: 24px 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.fifth-section .right-section .first-card .first-card-text {
+    margin-right: 34px;
+}
+
+.fifth-section .right-section .first-card .first-card-text h4 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+}
+
+.fifth-section .right-section .first-card .first-card-text p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fifth-section .right-section .first-card button {
+    padding: 4px 8px;
+    background-color: var(--mainGreenColor);
+    font-size: 16px;
+    border: 1px solid var(--mainGreenColor);
+    color: #fff;
+    border-radius: 30px;
+    white-space: nowrap;
+    height: 32px;
+    transition: .3s all ease-in-out;
+}
+
+.fifth-section .right-section .first-card button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 10px 0 var(--mainGreenColor);
+    color: var(--mainGreenColor);
+}
+
+.fifth-section .right-section .second-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-section .right-section .second-card .first-card-item {
+    margin-right: 12px;
+    flex: 6;
+    padding: 20px 40px;
+    background-color: #F3F0EA;
+}
+
+.fifth-section .right-section .second-card .first-card-item h4 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.fifth-section .right-section .second-card .first-card-item .profile-card-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fifth-section .right-section .second-card .first-card-item .profile-card-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.fifth-section .right-section .second-card .first-card-item .profile-card-item h5 {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.fifth-section .right-section .second-card .second-card-item {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 4;
+    border-color: var(--mainGreenColor);
+}
+
+.fifth-section .right-section .second-card .second-card-item img {
+    width: 72px;
+    height: 72px;
+    margin-right: 0;
+}
+
+.fifth-section .right-section .second-card .second-card-item h5 {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.fifth-section .right-section .second-card .second-card-item h5 {
+    font-size: 16px;
+}
+
+.fifth-section .right-section .second-card .second-card-item span {
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+.fifth-section .right-section .second-card .second-card-item a {
+    padding: 12px 40px;
+    background-color: var(--mainBlackColor);
+    color: #fff;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid var(--mainBlackColor);
+    font-size: 16px;
+    white-space: nowrap;
+    transition: .3s all ease-in-out;
+}
+
+.fifth-section .right-section .second-card .second-card-item a:hover {
+    background-color: transparent;
+    color: var(--mainBlackColor);
+}
+
+.sixth-section .second-section-content .card {
+    height: 215px;
+    padding: 24px;
+    border-radius: 16px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.sixth-section .second-section-content .card h4 {
+    font-size: 18px;
+}
+
+.sixth-section .second-section-content .card h4 {
+    font-size: 16px;
+}
+
+.sixth-section .second-section-content .card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-footer a {
+    padding: 4px 8px;
+    background-color: var(--mainGreenColor);
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.card-footer span {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.more-btn {
+    background-color: var(--mainBlackColor);
+    color: #fff;
+    padding: 20px 24px;
+    border-radius: 8px;
+    display: block;
+    width: 125px;
+    text-align: center;
+    margin: 64px auto;
+    transition: .3s all ease-in-out;
+}
+
+.more-btn:hover {
+    background-color: transparent;
+    color: var(--mainBlackColor);
+    box-shadow: 0 0 10px 0 gray;
+
+}
+
+.divider {
+    width: 100%;
+    object-fit: cover;
+}
+
+.seventh-section {
+    margin: 40px 0 80px 0;
+}
+
+.seventh-section .left-section {
+    flex: 60%;
+}
+
+.seventh-section .left-section h2 {
+    font-size: 40px;
+}
+
+.seventh-section .left-section p {
+    font-size: 16px;
+}
+
+.seventh-section .right-section {
+    flex: 40%;
+}
+
+.seventh-section .right-section img {
+    height: 330px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
